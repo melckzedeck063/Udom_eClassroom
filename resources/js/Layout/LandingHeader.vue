@@ -1,9 +1,10 @@
 <template>
-    <header class="bg-white -mt-6 dark:bg-slate-800">
+    <header class="bg-white -mt-6 dark:bg-slate-900">
       <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8 dark:text-white" aria-label="Global">
         <div class="flex lg:flex-1">
           <a href="#" class="-m-1.5 p-1.5 flex-row flex space-x-4">
-              <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="" />
+              <!-- <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="" /> -->
+              <img class="h-14 w-auto  -mt-4 -ml-4" :src="imagePath" alt="" />
               <span class="text-slate-800 text-lg dark:text-white">UDOM eCLASSROOM</span>
           </a>
         </div>
@@ -58,17 +59,18 @@
         </Link>
         </PopoverGroup>
         <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-          <Link href="#" class="text-sm font-semibold leading-6 text-gray-900 dark:text-white hover:bg-gray-50 dark:hover:bg-slate-500 rounded-lg px-4 py-1">Log in <span aria-hidden="true">&rarr;</span></Link>
+          <Link href="#" class="text-sm font-semibold leading-6 text-gray-900 dark:text-white hover:bg-gray-50 dark:hover:bg-slate-500 rounded-lg px-4 py-1 flex">Log in  <span aria-hidden="true">&rarr;</span></Link>
         </div>
       </nav>
       <Dialog as="div" class="lg:hidden" @close="mobileMenuOpen = false" :open="mobileMenuOpen">
         <div class="fixed inset-0 z-10" />
-        <DialogPanel class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white dark:bg-slate-700 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <DialogPanel class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white dark:bg-slate-900 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div class="flex items-center justify-between">
-            <a href="#" class="-m-1.5 p-1.5">
-              <span class="sr-only">Your Company</span>
-              <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="" />
-            </a>
+            <a href="#" class="-m-1.5 p-1.5 flex-row flex space-x-4">
+              <!-- <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="" /> -->
+              <img class="h-14 w-auto  -mt-4 -ml-2" :src="imagePath" alt="" />
+              <span class="text-slate-800 text-lg dark:text-white">UDOM eCLASSROOM</span>
+          </a>
             <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700 dark:text-white" @click="mobileMenuOpen = false">
               <span class="sr-only dark:text-white">Close menu</span>
               <XMarkIcon class="h-6 w-6" aria-hidden="true" />
@@ -86,12 +88,19 @@
                     <DisclosureButton v-for="item in [...products, ...callsToAction]" :key="item.name" as="a" :href="item.href" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">{{ item.name }}</DisclosureButton>
                   </DisclosurePanel>
                 </Disclosure> -->
-                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 dark:hover:bg-slate-500 dark:text-white">Features</a>
-                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 dark:hover:bg-slate-500 dark:text-white">Marketplace</a>
-                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 dark:hover:bg-slate-500 dark:text-white">Company</a>
+            <Link href="/" class="text-sm font-semibold flex-row flex justify-centerr space-x-3 leading-6 text-gray-900 dark:text-white hover:bg-gray-50 dark:hover:bg-slate-500 rounded-lg px-4 py-1">
+            <span><HomeIcon class="h-5 w-5 mr-1" aria-hidden="true" /></span> Home
+        </Link>
+          <Link href="/show" class="text-sm font-semibold flex-row flex space-x-3 leading-6 text-gray-900 dark:text-white hover:bg-gray-50 dark:hover:bg-slate-500 rounded-lg px-4 py-1">
+            <QuestionMarkCircleIcon class="h-5 w-5 mr-1 mt-0.5" aria-hidden="true" />
+            Helps
+        </Link>
+          <Link href="#" class="text-sm font-semibold leading-6 text-gray-900 flex-row flex space-x-3 dark:text-white hover:bg-gray-50 dark:hover:bg-slate-500 rounded-lg px-4 py-1">
+            <DocumentDuplicateIcon class="h-5 w-5 mr-1 mt-0.5" aria-hidden="true" />Docs
+        </Link>
               </div>
               <div class="py-6">
-                <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 dark:hover:bg-slate-500 dark:text-white">Log in</a>
+                <Link href="#" class="text-sm font-semibold leading-6 text-gray-900 dark:text-white hover:bg-gray-50 dark:hover:bg-slate-500 rounded-lg px-4 py-1 flex space-x-4">Log in  <span class="ml-2" aria-hidden="true" >&rarr;</span></Link>
               </div>
             </div>
           </div>
@@ -100,9 +109,21 @@
     </header>
     <slot></slot>
   </template>
+
+<script>
+import { defineComponent } from 'vue';
+
+export default defineComponent({
+  data() {
+    return {
+      imagePath: import.meta.env.BASE_URL + 'images/logo-170x172.png',
+    };
+  },
+});
+</script>
   
   <script setup>
-  import { ref } from 'vue'
+  import { ref, } from 'vue'
   import { Link } from '@inertiajs/vue3'
   import {
     Dialog,
