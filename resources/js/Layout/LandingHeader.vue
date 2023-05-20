@@ -50,7 +50,7 @@
           <Link href="/" class="text-sm font-semibold flex-row flex justify-center space-x-3 leading-6 text-gray-900 dark:text-white hover:bg-gray-50 dark:hover:bg-slate-500 rounded-lg px-4 py-1">
             <span><HomeIcon class="h-5 w-5 mr-1" aria-hidden="true" /></span> Home
         </Link>
-          <Link href="/show" class="text-sm font-semibold flex-row flex space-x-3 leading-6 text-gray-900 dark:text-white hover:bg-gray-50 dark:hover:bg-slate-500 rounded-lg px-4 py-1">
+          <Link href="#" class="text-sm font-semibold flex-row flex space-x-3 leading-6 text-gray-900 dark:text-white hover:bg-gray-50 dark:hover:bg-slate-500 rounded-lg px-4 py-1">
             <QuestionMarkCircleIcon class="h-5 w-5 mr-1 mt-0.5" aria-hidden="true" />
             Helps
         </Link>
@@ -59,7 +59,7 @@
         </Link>
         </PopoverGroup>
         <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-          <Link href="#" class="text-sm font-semibold leading-6 text-gray-900 dark:text-white hover:bg-gray-50 dark:hover:bg-slate-500 rounded-lg px-4 py-1 flex">Log in  <span aria-hidden="true">&rarr;</span></Link>
+          <Link href="/login" class="text-sm font-semibold leading-6 text-gray-900 dark:text-white hover:bg-gray-50 dark:hover:bg-slate-500 rounded-lg px-4 py-1 flex">Log in  <span aria-hidden="true">&rarr;</span></Link>
         </div>
       </nav>
       <Dialog as="div" class="lg:hidden" @close="mobileMenuOpen = false" :open="mobileMenuOpen">
@@ -91,7 +91,7 @@
             <Link href="/" class="text-sm font-semibold flex-row flex justify-centerr space-x-3 leading-6 text-gray-900 dark:text-white hover:bg-gray-50 dark:hover:bg-slate-500 rounded-lg px-4 py-1">
             <span><HomeIcon class="h-5 w-5 mr-1" aria-hidden="true" /></span> Home
         </Link>
-          <Link href="/show" class="text-sm font-semibold flex-row flex space-x-3 leading-6 text-gray-900 dark:text-white hover:bg-gray-50 dark:hover:bg-slate-500 rounded-lg px-4 py-1">
+          <Link href="#" class="text-sm font-semibold flex-row flex space-x-3 leading-6 text-gray-900 dark:text-white hover:bg-gray-50 dark:hover:bg-slate-500 rounded-lg px-4 py-1">
             <QuestionMarkCircleIcon class="h-5 w-5 mr-1 mt-0.5" aria-hidden="true" />
             Helps
         </Link>
@@ -100,7 +100,7 @@
         </Link>
               </div>
               <div class="py-6">
-                <Link href="#" class="text-sm font-semibold leading-6 text-gray-900 dark:text-white hover:bg-gray-50 dark:hover:bg-slate-500 rounded-lg px-4 py-1 flex space-x-4">Log in  <span class="ml-2" aria-hidden="true" >&rarr;</span></Link>
+                <Link href="/login" class="text-sm font-semibold leading-6 text-gray-900 dark:text-white hover:bg-gray-50 dark:hover:bg-slate-500 rounded-lg px-4 py-1 flex space-x-4">Log in  <span class="ml-2" aria-hidden="true" >&rarr;</span></Link>
               </div>
             </div>
           </div>

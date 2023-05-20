@@ -17,7 +17,7 @@ class IndexController extends Controller
 
     public function show(){
         return  inertia(
-            'Index/Show',
+            'Index/Login',
             [
                 'message' => "Hello from cive classroom show page"
             ]
