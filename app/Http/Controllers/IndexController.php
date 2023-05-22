@@ -23,4 +23,13 @@ class IndexController extends Controller
             ]
         );
     }
+
+    public function register(){
+        return inertia('Index/SignUp',
+        [
+            'message' => "Hello from cive classroom show page"
+        ]
+    );
+    }
 }
+

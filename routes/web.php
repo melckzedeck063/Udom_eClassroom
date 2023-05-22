@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [IndexController::class, 'index']);
 Route::get('/login', [IndexController::class, 'show']);
+Route::get('/signup', [IndexController::class, 'register']);
 
 Route::get('/dashboard', [DashboardController::class, 'dashboard']);
 
