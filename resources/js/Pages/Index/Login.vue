@@ -7,9 +7,9 @@
       <body class="h-full">
       ```
     -->
-    <div class="flex min-h-full flex-1 flex-col justify-center px-6 py-8 lg:px-8">
+    <div class="flex min-h-full bg-white dark:bg-slate-800 flex-1 flex-col justify-center px-6 py-8 lg:px-8">
         
-        <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm shadow-xl bg-slate-200 dark:bg-slate-700 py-4 px-10 rounded-lg">
+        <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm shadow-xl bg-slate-100 dark:bg-slate-700 py-4 px-10 rounded-lg">
           <div class="sm:mx-auto sm:w-full sm:max-w-sm">
             <img :src="imagePath" class="h-32 w-32 mx-auto mb-2" alt="">
             <!-- <h2 class="mt-5 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900 dark:text-white">Sign in to your account</h2> -->

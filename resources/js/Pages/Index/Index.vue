@@ -2,13 +2,13 @@
     <div class="bg-white py-20 sm:py-28 dark:bg-slate-800">
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div class="mx-auto max-w-2xl lg:text-center">
-            <p class="mt-2 text-3xl font-bold text-gray-900 dark:text-white sm:text-4xl">The  University  Of  Dodoma</p>
+            <p class="mt-2 text-3xl font-bold text-gray-700 dark:text-white sm:text-4xl">The  University  Of  Dodoma</p>
           <h2 class="font-semibold leading-7 text-blue-500 text-2xl">E-learning Platform</h2>
           <p class="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-200">Quis tellus eget adipiscing convallis sit sit eget aliquet quis. Suspendisse eget egestas a elementum pulvinar et feugiat blandit at. In mi viverra elit nunc.</p>
         </div>
         <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl ">
           <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
-            <div v-for="feature in features" :key="feature.name" class="relative pl-16 shadow-xl my-1 bg-slate-200 p-1 dark:bg-slate-700 rounded-lg">
+            <div v-for="feature in features" :key="feature.name" class="relative pl-16 shadow-xl my-1 bg-gray-100 p-1 dark:bg-slate-700 rounded-lg">
               <dt class="text-base font-semibold leading-7 text-gray-900 dark:text-white">
                 <div class="absolute left-0.5 top-0.5 flex h-10 w-10 items-center justify-center rounded-lg bg-blue-500">
                   <component :is="feature.icon" class="h-6 w-6 text-white" aria-hidden="true" />

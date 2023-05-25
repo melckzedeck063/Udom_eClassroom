@@ -15,5 +15,14 @@ class DashboardController extends Controller
             );
     }
 
+    public function course(){
+        return  inertia(
+            'Index/Course',
+            [
+                "message" => "Hello cive classrom"
+            ]
+        );
+}
+
 
 }

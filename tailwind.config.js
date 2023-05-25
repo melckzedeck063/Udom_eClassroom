@@ -5,8 +5,11 @@ export default {
     './resources/views/**/*.blade.php',
     './resources/js/**/*.vue'
   ],
+  // darkMode: 'class',
   theme: {
-    extend: {},
+    extend: {
+      
+    },
   },
   plugins: [
     require('@tailwindcss/forms')

@@ -20,6 +20,7 @@ Route::get('/login', [IndexController::class, 'show']);
 Route::get('/signup', [IndexController::class, 'register']);
 
 Route::get('/dashboard', [DashboardController::class, 'dashboard']);
+Route::get('/dashboard/course', [DashboardController::class, 'course']);
 
 // Auth::routes();
 

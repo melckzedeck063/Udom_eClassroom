@@ -9,7 +9,7 @@
         @inertiaHead();
 
     </head>
-    <body class="bg-slate-100 dark:bg-slate-800">
+    <body class="bg-slate-100 dark:bg-slate-800 text-white dark:text-slate-800">
         @inertia
     </body>
 </html>

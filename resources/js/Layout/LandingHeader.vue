@@ -1,5 +1,5 @@
 <template>
-    <header class="bg-white -mt-6 dark:bg-slate-900">
+    <header class="bg-slate-100 shadow-lg -mt-6 dark:bg-slate-900">
       <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8 dark:text-white" aria-label="Global">
         <div class="flex lg:flex-1">
           <a href="#" class="-m-1.5 p-1.5 flex-row flex space-x-4">
@@ -47,24 +47,24 @@
             </transition>
           </Popover> -->
   
-          <Link href="/" class="text-sm font-semibold flex-row flex justify-center space-x-3 leading-6 text-gray-900 dark:text-white hover:bg-gray-50 dark:hover:bg-slate-500 rounded-lg px-4 py-1">
+          <Link href="/" class="text-sm font-semibold flex-row flex justify-center space-x-3 leading-6 text-gray-700 dark:text-white hover:bg-gray-50 dark:hover:bg-slate-500 rounded-lg px-4 py-1">
             <span><HomeIcon class="h-5 w-5 mr-1" aria-hidden="true" /></span> Home
         </Link>
-          <Link href="#" class="text-sm font-semibold flex-row flex space-x-3 leading-6 text-gray-900 dark:text-white hover:bg-gray-50 dark:hover:bg-slate-500 rounded-lg px-4 py-1">
+          <Link href="#" class="text-sm font-semibold flex-row flex space-x-3 leading-6 text-gray-700 dark:text-white hover:bg-gray-50 dark:hover:bg-slate-500 rounded-lg px-4 py-1">
             <QuestionMarkCircleIcon class="h-5 w-5 mr-1 mt-0.5" aria-hidden="true" />
             Helps
         </Link>
-          <Link href="#" class="text-sm font-semibold leading-6 text-gray-900 flex-row flex space-x-3 dark:text-white hover:bg-gray-50 dark:hover:bg-slate-500 rounded-lg px-4 py-1">
+          <Link href="#" class="text-sm font-semibold leading-6 text-gray-700 flex-row flex space-x-3 dark:text-white hover:bg-gray-50 dark:hover:bg-slate-500 rounded-lg px-4 py-1">
             <DocumentDuplicateIcon class="h-5 w-5 mr-1 mt-0.5" aria-hidden="true" />Docs
         </Link>
         </PopoverGroup>
         <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-          <Link href="/login" class="text-sm font-semibold leading-6 text-gray-900 dark:text-white hover:bg-gray-50 dark:hover:bg-slate-500 rounded-lg px-4 py-1 flex">Log in  <span aria-hidden="true">&rarr;</span></Link>
+          <Link href="/login" class="text-sm font-semibold leading-6 text-gray-700 dark:text-white hover:bg-gray-50 dark:hover:bg-slate-500 rounded-lg px-4 py-1 flex">Log in  <span aria-hidden="true">&rarr;</span></Link>
         </div>
       </nav>
       <Dialog as="div" class="lg:hidden" @close="mobileMenuOpen = false" :open="mobileMenuOpen">
         <div class="fixed inset-0 z-10" />
-        <DialogPanel class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white dark:bg-slate-900 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <DialogPanel class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white dark:bg-slate-900 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-700/10">
           <div class="flex items-center justify-between">
             <a href="#" class="-m-1.5 p-1.5 flex-row flex space-x-4">
               <!-- <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="" /> -->
@@ -85,22 +85,22 @@
                     <ChevronDownIcon :class="[open ? 'rotate-180' : '', 'h-5 w-5 flex-none']" aria-hidden="true" />
                   </DisclosureButton>
                   <DisclosurePanel class="mt-2 space-y-2">
-                    <DisclosureButton v-for="item in [...products, ...callsToAction]" :key="item.name" as="a" :href="item.href" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">{{ item.name }}</DisclosureButton>
+                    <DisclosureButton v-for="item in [...products, ...callsToAction]" :key="item.name" as="a" :href="item.href" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-700 hover:bg-gray-50">{{ item.name }}</DisclosureButton>
                   </DisclosurePanel>
                 </Disclosure> -->
-            <Link href="/" class="text-sm font-semibold flex-row flex justify-centerr space-x-3 leading-6 text-gray-900 dark:text-white hover:bg-gray-50 dark:hover:bg-slate-500 rounded-lg px-4 py-1">
+            <Link href="/" class="text-sm font-semibold flex-row flex justify-centerr space-x-3 leading-6 text-gray-700 dark:text-white hover:bg-gray-50 dark:hover:bg-slate-500 rounded-lg px-4 py-1">
             <span><HomeIcon class="h-5 w-5 mr-1" aria-hidden="true" /></span> Home
         </Link>
-          <Link href="#" class="text-sm font-semibold flex-row flex space-x-3 leading-6 text-gray-900 dark:text-white hover:bg-gray-50 dark:hover:bg-slate-500 rounded-lg px-4 py-1">
+          <Link href="#" class="text-sm font-semibold flex-row flex space-x-3 leading-6 text-gray-700 dark:text-white hover:bg-gray-50 dark:hover:bg-slate-500 rounded-lg px-4 py-1">
             <QuestionMarkCircleIcon class="h-5 w-5 mr-1 mt-0.5" aria-hidden="true" />
             Helps
         </Link>
-          <Link href="#" class="text-sm font-semibold leading-6 text-gray-900 flex-row flex space-x-3 dark:text-white hover:bg-gray-50 dark:hover:bg-slate-500 rounded-lg px-4 py-1">
+          <Link href="#" class="text-sm font-semibold leading-6 text-gray-700 flex-row flex space-x-3 dark:text-white hover:bg-gray-50 dark:hover:bg-slate-500 rounded-lg px-4 py-1">
             <DocumentDuplicateIcon class="h-5 w-5 mr-1 mt-0.5" aria-hidden="true" />Docs
         </Link>
               </div>
               <div class="py-6">
-                <Link href="/login" class="text-sm font-semibold leading-6 text-gray-900 dark:text-white hover:bg-gray-50 dark:hover:bg-slate-500 rounded-lg px-4 py-1 flex space-x-4">Log in  <span class="ml-2" aria-hidden="true" >&rarr;</span></Link>
+                <Link href="/login" class="text-sm font-semibold leading-6 text-gray-700 dark:text-white hover:bg-gray-50 dark:hover:bg-slate-500 rounded-lg px-4 py-1 flex space-x-4">Log in  <span class="ml-2" aria-hidden="true" >&rarr;</span></Link>
               </div>
             </div>
           </div>
