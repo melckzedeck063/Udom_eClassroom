@@ -7,7 +7,7 @@
       <body class="h-full">
       ```
     -->
-    <div class="flex min-h-full bg-white flex-1 flex-col justify-center px-6 py-8 lg:px-8">
+    <div class="flex min-h-full bg-white dark:bg-slate-800 flex-1 flex-col justify-center px-6 py-8 lg:px-8">
         
         <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-2xl  shadow-xl bg-slate-100 dark:bg-slate-700 py-4 px-10 rounded-lg">
           <div class="sm:mx-auto sm:w-full sm:max-w-sm">
